@@ -1,39 +1,46 @@
-carta2
-	#include <stdio.h>
+#include <stdio.h>
 
 int main(){
 	
-	char estado[30] = "B";
-	char codigo[30] = "B02";
-	char cidade[30] = "RiodeJaneiro";
-	int populacao = 6748000;
-	float area = 1200.25 ;
-	float pib = 300.50;
-	int turistico = 30;
+	char estado[30];
+	char codigo[30];
+	char cidade[30];
+	int populacao;
+	float area;
+	float pib;
+	int pontosturistico;
+	float DensidadePopulacional;
+	float PIBperCapita;
 	
-		
-	printf("estado: %s \n", estado);
+	printf("digite o estado \n");
+	scanf("%s", &estado);
 	
-	printf("codigo: %s \n",codigo);
+	printf("digite codigo da cidade \n");
+	scanf("%s", &codigo); 
 	
-	printf("cidade: %s \n",cidade);
+	printf("Digite a Cidade \n");
+	scanf("%s", &cidade);
 	
-	printf("populacao: %d \n",populacao);
-		
-	printf("area: %.2f \n",area);
+	printf("Digite a quantidade de popoulacao \n");
+	scanf("%d", &populacao);
 	
-	printf("PIB: %.2f\n",pib);
+	printf("Digite Area Habitada \n");
+	scanf("%f", &area);
+
+		printf("Digite PIB da Cidade \n");
+	scanf("%f", &pib);
 	
-	printf("turistico: %d \n", turistico);
+	printf("PIBperCapita: \n", pib / populacao);
 	
-	  
-	
-	printf("seu codigo: %s - estado: %s - cidade: %s - populacao: %d - area habitada: %.2f km  -  Valor PIB da cidade: %.2f milhoes - Area turistica: %d" , codigo, estado, cidade, populacao, area, pib, turistico);
+	printf("Digite quantidade de pontos turistico \n");
+	scanf("%d", &pontosturistico);
 	
 	
 	
 
-	
+
+	printf("Estado: %s - Codigo: %s - Cidade: %s - Populacao: %d - Area Habitada: %.2f km - PIB da Cidade: %.2f bilhoes - Pontos Turistico: %d", estado, codigo, cidade, populacao, area, DensidadePopulacional, pib, pontosturistico);	
+
 	return 0;
 	
 }
